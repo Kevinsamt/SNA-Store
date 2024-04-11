@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            color: aqua;
+        }
+        h1{color: aqua;
+        text-shadow: #ff0202;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    top: 240px;}
+        .topup-sna {
+            position: relative; /* Tambahkan posisi relatif untuk kontainer */
+            width: 150px; /* Atur lebar sesuai kebutuhan */
+            height: 150px; /* Atur tinggi sesuai kebutuhan */
+            display: inline-block; /* Membuat kontainer menjadi blok yang dapat diatur ukurannya */
+        }
+        .topup-sna a {
+            position: absolute;
+            top: 300px; /* Atur jarak dari atas sesuai kebutuhan */
+            right: 10px; /* Atur jarak dari kanan sesuai kebutuhan */
+            border: 0.5px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            transition: color 0.3s;
+            text-shadow: 1px 1px 1px #ff0202; /* Atur bayangan teks sesuai kebutuhan */
+        }
+        .topup-sna img {
+            max-width: 100%; /* Agar gambar tidak melebihi lebar kontainer */
+            max-height: 100%; /* Agar gambar tidak melebihi tinggi kontainer */
+            cursor: grab; /* Mengubah kursor saat digeser */
+        }
+        .topup-sna img:active {
+            cursor: grabbing; /* Mengubah kursor saat gambar sedang digeser */
+        }
+    </style>
+</head>
+<body>
+    <h1>Populer</h1>
+    <div class="topup-sna">
+        <a href="#"><img src="/img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png"></a>
+    </div>
+    <div class="topup-sna">
+        <a href="#"><img src="/img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png"></a>
+    </div>
+    <!-- Tambahkan div untuk mengelilingi gambar -->
+    <div class="topup-sna">
+        <div class="draggable">
+            <a href="#"><img src="/img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png"></a>
+        </div>
+    </div>
+    <div class="topup-sna">
+        <div class="draggable">
+            <a href="#"><img src="/img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png"></a>
+        </div>
+    </div>
+    <div class="topup-sna">
+        <div class="draggable">
+            <a href="#"><img src="/img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png"></a>
+        </div>
+    </div>
+    <div class="topup-sna">
+        <div class="draggable">
+            <a href="#"><img src="/img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png"></a>
+        </div>
+    </div>
+    <div class="topup-sna">
+        <div class="draggable">
+            <a href="#"><img src="/img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .navbar {
+        overflow: hidden;
+        background-image: url('img/navbar-background.jpg'); /* Ganti dengan gambar yang lebih menarik */
+        background-size: cover;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        z-index: 999;
+        position: relative;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+        background-color: rgba(255,255,255,0.3);
+        color: black;
+        transform: scale(1.1); /* Efek hover lebih interaktif */
+    }
+
+    .navbar a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .navbar a.logo {
+        font-size: 25px;
+        margin: 0;
+        padding: 0 20px;
+        line-height: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        transition: transform 0.3s;
+    }
+
+    .navbar a.logo span {
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    .navbar a.logo:hover span {
+        color: #45a049;
+        transform: rotateY(180deg) scale(1.2); /* Animasi lebih menarik */
+    }
+
+    .navbar a.login-btn {
+        border: 2px solid #4CAF50;
+        border-radius: 4px;
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    }
+
+    .navbar a.login-btn:hover {
+        background-color: #4CAF50;
+        color: white;
+        transform: scale(1.1);
+    }
+    .event-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+  
+    .event-image {
+      width: 400px; /* Gambar yang lebih besar */
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .event-details {
+      margin-left: 20px;
+    }
+  
+    .event-details h2 {
+      font-size: 28px; /* Ukuran judul yang lebih besar */
+      margin-bottom: 10px;}
+  
+    .event-details p {
+      font-size: 18px; /* Ukuran teks yang lebih besar */
+      margin-bottom: 8px;
+    }
+  
+    .btn-register {
+      display: inline-block;
+      padding: 12px 24px; /* Tombol yang lebih besar */
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px; /* Sudut tombol yang lebih besar */
+      transition: background-color 0.3s, transform 0.3s;
+    }
+  
+    .btn-register:hover {
+      background-color: #0056b3;
+      transform: scale(1.05); /* Efek hover yang lebih menarik */
+    }
+
+    /* Animasi judul */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="active logo" href="#"><span>SNA</span>store</a>
+        <a href="#">Home</a>
+        <a href="html/Tentang kami.html">Tentang Kami</a>
+        <a href="#" class="login-btn" style="float: right;">Login</a>
+        <a href="html/event.html">Event</a>
+    </div>
+
+    <div class="event-container">
+        <img src="../img/Logo_Mobile_Legends_-_Bang_Bang_(2023).png" alt="Event" class="event-image">
+        <div class="event-details">
+            <h2>Tournament MLBB</h2>
+            <p>Pendaftaran Dimulai: 1-4 April</p>
+            <p>Tempat: Diadakan secara online</p>
+            <p>Deskripsi: Pendaftaran akan dibuka pada tanggal 1-3 April 2024 dan turnamen akan dilaksanakan pada tanggal 4-6 April 2024</p>
+            <a href="#" class="btn-register">Daftar Sekarang</a>
+        </div>
+    </div>
+</body>
+</html>
